@@ -2,11 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home Page</title>
+  <title>FriendFinder: Home Page</title>
 
   <!-- Bootstrap / Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- MUST USE LOCAL STYLE BECAUSE THIS EXPRESS SERVER CONFIGURAITON DOES NOT SUPPORT LINKING TO A STYLE SHEET -->
+    <style>
+
+    body
+     {
+       font-size:16px;
+     }
+
+      h1
+        {
+            font-size:60px;
+        }
+
+        .jumbotron
+        {
+          background-color:#ededed;
+        }
+
+    </style>
+    
 
 </head>
 <body>
@@ -15,21 +36,21 @@
 
     <div class="jumbotron">
  
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+      <h1><span style="font-weight:800;">Friend</span><span style="font-weight:300;">Finder</span></h1>
       <hr>
       <h2>Answer a few basic questions. </h2>
       <h2>Then find the friend with the greatest compatibility!</h2>
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4>Go to Survey</h4></button></a>
       </div>
 
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/michaeldcastillo/friend-finder-app">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/michaeldcastillo/friend-finder-app">GitHub Repo</a></p>
       </div>
     </footer>
 
